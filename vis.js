@@ -1,24 +1,24 @@
 // vis.js boilerplate
 const nodes = [
-  { id: 'wgd', label: 'War God Descendant' },
-  { id: 'loip', label: 'League of Iron Preparation' },
-  { id: 'twtt', label: 'Tiger Warrior Training Technique' },
-  { id: 'icp', label: "Immortal Commander's Presence" },
-  { id: 'rsg', label: 'Rout-Stemming Gesture' },
-  { id: 'motui', label: 'Magnanimity of the Unstoppable Icon' },
-  { id: 'motr', label: 'March of the Returner' },
-  { id: 'sotda', label: 'Supremacy of the Divine Army' },
-  { id: 'hbu', label: 'Holistic Battle Understanding' },
-  { id: 'rrg', label: 'Redoubt-Raising Gesture' },
-  { id: 'gotass', label: 'General of the All-Seeing Sun' },
-  { id: 'fgm', label: 'Four Glories Meditation' },
-  { id: 'owff', label: 'One With Five Forces' },
-  { id: 'usc', label: 'Unstoppable Solar Conqueror' },
-  { id: 'ibkp', label: 'Ideal Battle Knowledge Prana' },
-  { id: 'bpa', label: 'Battle Path Ascendant' },
-  { id: 'iwt', label: "Immortal Warlord's Tactic" },
-  { id: 'twg', label: "Transcendant Warlord's Genius" },
-  { id: 'bvf', label: "Battle-Visionary's Foresight" },
+  { id: 'wgd', label: 'War God Descendant', level: 1 },
+  { id: 'loip', label: 'League of Iron Preparation', level: 2 },
+  { id: 'twtt', label: 'Tiger Warrior Training Technique', level: 3 },
+  { id: 'icp', label: "Immortal Commander's Presence", level: 2 },
+  { id: 'rsg', label: 'Rout-Stemming Gesture', level: 2 },
+  { id: 'motui', label: 'Magnanimity of the Unstoppable Icon', level: 3 },
+  { id: 'motr', label: 'March of the Returner', level: 4 },
+  { id: 'sotda', label: 'Supremacy of the Divine Army', level: 5 },
+  { id: 'hbu', label: 'Holistic Battle Understanding', level: 2 },
+  { id: 'rrg', label: 'Redoubt-Raising Gesture', level: 3 },
+  { id: 'gotass', label: 'General of the All-Seeing Sun', level: 4 },
+  { id: 'fgm', label: 'Four Glories Meditation', level: 5 },
+  { id: 'owff', label: 'One With Five Forces', level: 6 },
+  { id: 'usc', label: 'Unstoppable Solar Conqueror', level: 3 },
+  { id: 'ibkp', label: 'Ideal Battle Knowledge Prana', level: 1 },
+  { id: 'bpa', label: 'Battle Path Ascendant', level: 2 },
+  { id: 'iwt', label: "Immortal Warlord's Tactic", level: 2 },
+  { id: 'twg', label: "Transcendant Warlord's Genius", level: 4 },
+  { id: 'bvf', label: "Battle-Visionary's Foresight", level: 5 },
 ];
 const edges = [
   { from: 'wgd', to: 'loip' },
@@ -62,6 +62,36 @@ var data = {
   edges: edgesData,
 };
 
-var options = {};
+var options = {
+  layout: {
+    hierarchical: {
+      direction: 'UD',
+      sortMethod: 'directed',
+      levelSeparation: 100,
+      nodeSpacing: 350,
+      treeSpacing: 200,
+      blockShifting: true,
+      edgeMinimization: true,
+      parentCentralization: true,
+    },
+  },
+  interaction: { dragNodes: false },
+  physics: {
+    enabled: false,
+  },
+  // configure: {
+  //   filter: function(option, path) {
+  //     if (path.indexOf('hierarchical') !== -1) {
+  //       return true;
+  //     }
+  //     return false;
+  //   },
+  //   showButton: false,
+  // },
+};
 
 network = new vis.Network(container, data, options);
+
+// network.on('stabilizationIterationsDone', function() {
+//   network.setOptions({ physics: false });
+// });
