@@ -1,4 +1,4 @@
-{
+let war = {
   nodes: [
       {id: 'wgd', label: "War God Descendant"},
       {id: 'loip', label: "League of Iron Preparation"},
