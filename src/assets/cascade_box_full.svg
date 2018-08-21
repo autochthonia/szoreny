@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px"
+	 viewBox="0 0 258.6 131.4" style="enable-background:new 0 0 258.6 131.4;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFF7DF;stroke:#020203;stroke-width:2;} /* base polygon */
+	.st1{fill:none;stroke:#020203;stroke-width:0.75;} /* empty circle */
+	.st2{fill:#F4E600;stroke:#020203;stroke-width:0.75;} /* red ability dot */
+	.st3{fill:#C1292E;stroke:#020203;stroke-width:0.75;} /* gold essence dot */
+	.st4{fill:#020203;} /* text */
+	.st5{fill:#020203;stroke:#020203;stroke-width:0.75;} /* black upgrade circle */
+	.st6{fill:#FFFFFF;} /* white upgrade arrow */
+</style>
+<polygon class="st0" points="197.7,13.4 209.2,1 42.8,1 54.3,13.4 1,13.4 1,46.2 1,54.1 1,77.2 1,86.9 1,117.9 54.3,117.9
+	42.8,130.4 209.2,130.4 197.7,117.9 251,117.9 251,86.9 251,77.2 251,54.1 251,46.2 251,13.4 "/>
+<!-- Ability minima -->
+<circle class="st1" cx="80" cy="13.3" r="7.6"/>
+<circle class="st1" cx="103" cy="13.3" r="7.6"/>
+<circle class="st1" cx="126" cy="13.3" r="7.6"/>
+<circle class="st1" cx="149" cy="13.3" r="7.6"/>
+<circle class="st1" cx="172" cy="13.3" r="7.6"/>
+<!-- Essence minima -->
+<circle class="st1" cx="80" cy="118.3" r="7.6"/>
+<circle class="st1" cx="103" cy="118.3" r="7.6"/>
+<circle class="st1" cx="126" cy="118.3" r="7.6"/>
+<circle class="st1" cx="149" cy="118.3" r="7.6"/>
+<circle class="st1" cx="172" cy="118.3" r="7.6"/>
+
+<g>
+	<circle class="st5" cx="251" cy="13.3" r="7.6"/>
+	<polygon class="st6" points="254.4,13.5 251,7.5 247.6,13.5 249.8,13.5 249.8,19.1 252.2,19.1 252.2,13.5 	"/>
+</g>
+</svg>
