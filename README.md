@@ -1,5 +1,7 @@
 # Szoreny
 
+Exalted Charm Tree Viewer, not silver and upside-down... Unless you want them to be.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.4.
 
 ## Development server
